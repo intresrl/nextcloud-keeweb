@@ -6,16 +6,16 @@
     "build": "NODE_ENV=production webpack --progress --config webpack.js"
   },
   "dependencies": {
-    "@nextcloud/files": "^3.0.0",
-    "@nextcloud/webpack-vue-config": "^6.0.0",
-    "@nextcloud/browserslist-config": "^3.0.0"
+    "@nextcloud/browserslist-config": "^3.0.1",
+    "@nextcloud/files": "^4.0.0",
+    "@nextcloud/router": "^3.1.0",
+    "@nextcloud/webpack-vue-config": "^7.0.2"
   },
   "browserslist": [
     "extends @nextcloud/browserslist-config"
   ],
   "engines": {
-    "node": "^20.0.0",
-    "npm": "^9.0.0"
+    "node": ">=20"
   },
   "devDependencies": {
     "babel-loader-exclude-node-modules-except": "^1.2.1"
