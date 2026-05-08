@@ -1,3 +1,9 @@
+nextcloud-keeweb (0.6.25) — intresrl fork
+* Fixed KeeWeb not loading in iframe: added `allowIframes: true` to the config
+  endpoint response (required by KeeWeb 1.18.x which disables iframe embedding by default).
+* Fixed PHP syntax errors in keeweb.php caused by bare `<?` sequences in bundled
+  JavaScript being interpreted as PHP opening tags.
+
 nextcloud-keeweb (0.6.24) — intresrl fork
 * Updated KeeWeb bundle to intresrl/keepass-keeweb v1.18.10, which includes:
   * Fix for KDBX 4.1 `LastModificationTime` encoding: fields were written as ISO-8601
