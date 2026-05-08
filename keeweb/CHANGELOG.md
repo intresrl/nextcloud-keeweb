@@ -1,3 +1,11 @@
+nextcloud-keeweb (0.6.24) — intresrl fork
+* Updated KeeWeb bundle to intresrl/keepass-keeweb v1.18.10, which includes:
+  * Fix for KDBX 4.1 `LastModificationTime` encoding: fields were written as ISO-8601
+    strings instead of the Base64 binary required by the KDBX 4+ spec (keeweb/kdbxweb#49).
+    KeePassXC current versions are lenient and accept both formats, but the output is
+    now spec-compliant regardless.
+  * DOMPurify upgraded 2→3 (XSS CVE fix in the markdown sanitizer).
+
 nextcloud-keeweb (0.6.23) — intresrl fork
 * Compatibility with Nextcloud 33 (min-version raised to 33, max-version bumped to 34).
 * Migrated `AppInfo\Application` to the `IBootstrap` pattern required by NC 30+.
